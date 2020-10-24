@@ -1,0 +1,37 @@
+{% extends 'airquality/base.html' %}
+
+{% block content %}
+<div class="container mt-3">
+    <p>The air quality index (AQI) is an index for reporting air quality on a daily basis. It is a measure of how air
+        pollution
+        affects one's health within a short time period. The purpose of the AQI is to help people know how the local air
+        quality
+        impacts their health. The Environmental Protection Agency (EPA) calculates the AQI for five major air
+        pollutants, for
+        which national air quality standards have been established to safeguard public health.</p>
+    <ol type="1">
+        <li>Ground-level ozone</li>
+        <li>Particle pollution/particulate matter (PM2.5/pm 10)</li>
+        <li>Carbon Monoxide</li>
+        <li>Sulfur dioxide</li>
+        <li>Nitrogen dioxide</li>
+    </ol>
+    <p class="text-muted">The higher the AQI value, the greater the level of air pollution and the greater the health
+        danger. For example, an AQI
+        value of 50 represents "good" air quality and little danger to public health, while an AQI value of 250
+        represents "very
+        unhealthy" air quality.</p>
+    <h6>How is AQI calculated?</h6>
+    <p>Different countries use different point scales to report air quality. For instance, the United States uses a 500
+        point
+        scale, wherein rating between 0 and 50 is considered good. Rating between 301 to 500 range is deemed hazardous.
+        India
+        too follows that the 500 point scale. Every day monitors record concentrations of the major pollutants. These
+        raw
+        measurements are converted into a separate AQI value for each pollutant (ground-level ozone, particle pollution,
+        carbon
+        monoxide, and sulfur dioxide) using standard formulae developed by EPA. The highest of these AQI values are
+        reported as
+        the AQI value for that day.</p>
+</div>
+{% endblock %}

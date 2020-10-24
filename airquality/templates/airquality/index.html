@@ -1,0 +1,14 @@
+{% extends 'airquality/base.html' %}
+
+{% block content %}
+<br>
+{% if api_data %}
+<div class="jumbotron {{category_color}} text-center">
+    <h4 class="display-3">Air Quality: {{ api_data.data.aqi }}</h4>
+    <h4>City: {{ api_data.data.city.name }}</h4>
+    <h4>Date & Time: {{ api_data.data.time.s }}</h4>
+    <hr>
+    {{ category_description }}
+</div>
+{% endif %}
+{% endblock %}
